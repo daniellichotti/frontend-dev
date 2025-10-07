@@ -1,0 +1,55 @@
+* {
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: purple;
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+#filhoOrder1 {
+    order: 1;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#filhoOrder2 {
+    order: 2;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+
+#filhoOrder3 {
+    order: 3;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#filhoOrder1:hover {
+    flex-grow: 4;
+}
+
+#filhoOrder2:hover {
+    flex-grow: 10;
+}
+
+#filhoOrder3:hover {
+    flex-grow: 4;
+}
+
+.child {
+    background-color: orange;
+    transition: 0.5s ease;
+}

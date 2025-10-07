@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: gray url(./background.jpg) no-repeat;
+
+    background-size: cover;
+    background-position: right 0px;
+}
+
+h1 {
+    background: greenyellow;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+
+    box-shadow: 10px 5px 5px black;
+    border-radius: 0px 20px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Bitcount Prop Single Ink", sans-serif;
+    text-shadow: 12px 12px 4px grey;
+    text-decoration: line-through;
+}
+
+button {
+    padding: 20px;
+    margin: 40%;
+    border-radius: 30%;
+    cursor: pointer;
+    background-color: rgb(121, 121, 255);
+    transition: 0.05s ease;
+}
+
+h1:hover {
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: rgb(196, 196, 255);
+}

@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container div {
+    flex: 1;
+    transition: flex 0.5s ease;
+    /* efeito suave */
+    overflow: hidden;
+}
+
+.container div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Ao passar o mouse, a div cresce */
+.container div:hover {
+    flex: 3;
+}
+
+/* A imagem dentro também dá um leve zoom */
+.container div:hover img {
+    transform: scale(1.1);
+}

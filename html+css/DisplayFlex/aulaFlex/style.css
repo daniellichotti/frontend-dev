@@ -1,0 +1,32 @@
+body {
+    background-color: yellow;
+}
+
+#div1 {
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+
+#div2 {
+    background-color: purple;
+    height: 50px;
+    width: 50px;
+}
+
+#div3 {
+    background-color: peru;
+    height: 50px;
+    width: 50px;
+}
+
+#divPai {
+    border: 1px solid red;
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}

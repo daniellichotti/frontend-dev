@@ -1,0 +1,26 @@
+html {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: #ffffff;
+    margin: 0;
+}
+
+h1 {
+    background: #ff0000;
+    height: 80px;
+    width: 400px;
+    color: blue;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    background: #fa7e7e;
+    font-style: italic;
+    text-decoration: none;
+}

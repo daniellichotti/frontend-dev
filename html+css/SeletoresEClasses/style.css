@@ -1,0 +1,43 @@
+:root {
+    --cor-titulos: #3b0764;
+    --cor-background: #d8b4fe;
+    --cor-paragrafo: #1e1b4b;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--cor-background);
+}
+
+h1,
+h2 {
+    color: var(--cor-titulos);
+}
+
+h1,
+h2,
+p {
+    margin: 10px 20px 20px 20px;
+    border-bottom: 1px solid #e3c9ff
+}
+
+.alinha-centro {
+    text-align: center;
+}
+
+#alinha-esquerda {
+    text-align: start;
+}
+
+h1 {
+    padding: 20px;
+}
+
+p {
+    color: var(--cor-paragrafo);
+}

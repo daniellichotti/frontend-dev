@@ -1,0 +1,17 @@
+Página Pessoal Simples
+Crie uma página chamada index.html com as seguintes características:
+  O título da página (na aba do navegador) deve ser "Minha Página Pessoal".
+
+  Na página deve haver:
+  Um título principal <h1> com seu nome.
+  Um parágrafo <p> com uma breve descrição sobre você (pode ser inventado).
+  Uma lista não ordenada <ul> com 3 hobbies seus.
+  Uma imagem qualquer da internet usando <img>.
+  Um link <a> que leve para o Google.
+
+Crie um arquivo style.css e aplique o seguinte estilo:
+  Mude a cor do título principal para azul.
+  Centralize o título.
+  Coloque o fundo da página em uma cor clara.
+  Altere a fonte do parágrafo para Arial.
+  Faça com que a imagem tenha largura de 200px.
