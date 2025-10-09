@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--Input de texto para nome-->
+        <h1>Preferências do Usuário</h1>
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" placeholder="Digite aqui seu nome">
+
+        <!--Menu Dropdown com animais-->
+        <label for="animais">Escolha seu animal preferido:</label>
+        <select id="animais">
+            <option selected disabled value="">Selecione um animal</option>
+            <option value="Cachorro">Cachorro</option>
+            <option value="Gato">Gato</option>
+            <option value="Tucunaré">Tucunaré</option>
+            <option value="Papagaio">Papageio</option>
+            <option value="Peixinho Dourado">Peixinho Dourado</option>
+        </select>
+
+        <!--check box para interesses (musica, esportes, etc)-->
+        <div class="checkbox-group">
+            <p>Selecione seus interesses</p>
+            <label><input type="checkbox" value="Tecnologia">Tecnologia</label>
+            <label><input type="checkbox" value="Esportes">Esportes</label>
+            <label><input type="checkbox" value="Viagens">Viagens</label>
+            <label><input type="checkbox" value="Música">Música</label>
+        </div>
+
+        <button onclick="mostrarPreferencias()">Enviar</button>
+
+        <div id="resultado">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
