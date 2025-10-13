@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prova</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite aqui o seu nome">
+
+        <div class="checkbox-group">
+            <p>Você é:</p>
+            <label><input type="checkbox" value="maior">Maior</label>
+            <label><input type="checkbox" value="menor">Menor</label>
+        </div>
+
+        <button onclick="exibeTexto()">Click me</button>
+        <button onclick="trocaCor()">Click me</button>
+        <div id="resultado">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
