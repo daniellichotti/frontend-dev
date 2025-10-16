@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #ffc1c1, #ff1c1c);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#title {
+    font-size: 80px;
+    color: white;
+    padding: 50px;
+}
+
+.pokemon {
+    background: linear-gradient(135deg, rgba(245, 40, 255, 0.19), rgba(83, 0, 87, 0.35));
+    border-radius: 16px;
+    box-shadow: 1px 4px 4px #000;
+    margin-top: 30px;
+    padding: 20px;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    font-size: 30px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
