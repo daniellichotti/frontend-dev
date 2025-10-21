@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div id="container"></div>
+  <body>
+    <div id="getDeleteBook">
+      <button onclick="getBooks()">Listar Livros</button>
+      <input type="text" id="bookId" />
+      <button onclick="getBook()">Buscar Livro</button>
+      <button id="deleteButton" onclick="deleteBook()">Deletar Livro</button>
+    </div>
 
+    <div id="booksContainer">
+      <div id="bookForm">
+        <input type="text" id="bookTitle" placeholder="Título do Livro" />
+        <input type="number" id="bookYear" placeholder="Ano do Livro" />
+        <select name="bookAvaible" id="bookAvaible">
+          <option value="" selected disabled>Selecione um item</option>
+          <option value="Disponivel">Disponivel</option>
+          <option value="Indisponivel">Indisponivel</option>
+        </select>
+        <button onclick="addBook()">Adicionar Livro</button>
+        <button onclick="updateBook()">Atualizar Livro</button>
+      </div>
+      <div id="container"></div>
+    </div>
 
-    <script src="script.js"> </script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

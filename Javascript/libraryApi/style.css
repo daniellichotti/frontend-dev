@@ -1,11 +1,86 @@
-* {}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e293b;
+}
+
+button {
+  background-color: #64748b;
+  border-radius: 8px;
+  border: none;
+  padding: 6px;
+  color: #f8fafc;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+#deleteButton:hover {
+  background-color: #bf0000;
+}
+
+input {
+  background-color: #94a3b8;
+  border-radius: 8px;
+  border: none;
+  padding: 6px;
+  color: #f8fafc;
+}
+
+select {
+  background-color: #94a3b8;
+  border-radius: 8px;
+  border: none;
+  padding: 6px;
+  color: #f8fafc;
+}
 
 #container {
-    display: flex;
+  display: flex;
 
-    gap: 20px;
+  gap: 20px;
+}
+
+#getDeleteBook {
+  background-color: #0f172a;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#bookForm {
+  background-color: #f8fafc;
+  width: 200px;
+  height: 100vh;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+#booksContainer {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
 }
 
 #card {
-    border: 1px solid blue;
+  background-color: #f8fafc;
+  height: 100px;
+  width: 100px;
+  margin: 16px;
+  border-radius: 8px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
