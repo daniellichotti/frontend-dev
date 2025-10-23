@@ -31,7 +31,7 @@ async function getBook() {
 
     clearContainer()
 
-    container.innerHTML = `
+    container.innerHTML = ` 
                 <div id="card" style="border: 1px solid ${data.avaible ? "green" : "red"}">
                     <div id="title">${data.title}</div >
                     <p>Ano: ${data.year}</p>
