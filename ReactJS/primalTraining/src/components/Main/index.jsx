@@ -36,12 +36,12 @@ export function Main() {
                 <div id="secondImage" />
             </Container>
 
-            <TextContainer>
-                <h1>
+            <TextContainer style={{ justifyContent: "start" }}>
+                <h1 style={{ marginLeft: "20px" }}>
                     Join The
-                    <strong>Community</strong>
+                    <strong>{' '}Community</strong>
                 </h1>
-            </TextContainer>
+            </TextContainer >
 
         </>
     )
