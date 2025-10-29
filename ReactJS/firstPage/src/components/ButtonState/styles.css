@@ -1,0 +1,15 @@
+button {
+    background-color: aqua;
+    padding: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    font-size: 2rem;
+    transition: 0.1s;
+    cursor: pointer;
+    box-shadow: 4px 2px 2px #000;
+}
+
+button:hover {
+    background-color: rgb(170, 251, 251);
+}

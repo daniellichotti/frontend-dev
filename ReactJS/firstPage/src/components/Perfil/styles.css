@@ -1,0 +1,12 @@
+#profileContainer {
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}

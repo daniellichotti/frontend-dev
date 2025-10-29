@@ -1,14 +1,25 @@
 import './App.css'
-import { Button } from './components/Button/Button'
-import { Header } from './components/Header/Header'
+import { WhatsappLogoIcon, InstagramLogoIcon, EnvelopeOpenIcon } from "@phosphor-icons/react";
+
 
 export function App() {
+
+
   return (
     <div className="container">
-      <Header name='Bem vindos ao meu site' />
-      <p>Essa é minha primeira página!</p>
-      <Button name="Enviar" color="green" />
-      <Button name="Cancelar" color="red" />
+      <img style={{ borderRadius: '100%' }} src="https://randomuser.me/api/portraits/lego/6.jpg" alt="" />
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'white' }}>
+        <WhatsappLogoIcon size={32} weight="thin" />
+        <p>6666-6666</p>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'white' }}>
+        <InstagramLogoIcon size={32} weight="thin" />
+        <p>@moisesinho</p>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'white' }}>
+        <EnvelopeOpenIcon size={32} weight="thin" />
+        <p>moisesinho@yahoo.com</p>
+      </div>
     </div>
   )
 }

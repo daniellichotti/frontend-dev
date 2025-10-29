@@ -1,0 +1,29 @@
+.productContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.productContainer img {
+    height: 200px;
+    width: 250px;
+    border-radius: 100%;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.productInfo p {
+    background-color: aqua;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: red;
+}
