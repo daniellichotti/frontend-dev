@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import FirstImage from "../../assets/FirstImage.png"
 import SecondImage from "../../assets/SecondImage.png"
+import ImageSecondContainer from "../../assets/ImageSecondContainer.png"
 
 export const TextContainer = styled.header`
     padding: 20px 2px;
@@ -31,13 +32,13 @@ export const Container = styled.div`
     #firstImage {
         grid-column: 1 /span 2;
         grid-row: 1;
-        background-image: url(${FirstImage}); 
+        background: url(${FirstImage}) center/cover no-repeat;
     }
 
     #secondImage {
         grid-column: 3;
         grid-row: 2;
-        background-image: url(${SecondImage}); 
+        background: url(${SecondImage}) center/cover no-repeat;; 
     }
 
     #textCard {
@@ -53,6 +54,7 @@ export const Container = styled.div`
         h2 {
             font-size: 45px;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         div {
@@ -80,6 +82,7 @@ export const Container = styled.div`
         h2 {
             font-size: 45px;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         div {
@@ -88,8 +91,7 @@ export const Container = styled.div`
             :last-child {
                 margin-top: 32px;
                 margin-bottom: 32px;
-                text-transform: uppercase;
-                
+                text-transform: uppercase;      
             }
         }
     }
@@ -106,6 +108,7 @@ export const Container = styled.div`
         h2 {
             font-size: 45px;
             font-weight: bold;
+            text-transform: uppercase;
         }
 
         div {
@@ -121,4 +124,90 @@ export const Container = styled.div`
     }
 `
 
+export const SecondContainer = styled.div`
+    background-color: #E9ECFF;
 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1, 600px);
+
+    #imageSecondContainer {
+        grid-column: 2 /span 2;
+        grid-row: 1;
+        background: url(${ImageSecondContainer}) center/cover no-repeat;
+    }
+
+    .separator {
+        background-color: #000;
+        height: 1px;
+        width: 100%;
+    }
+
+    #textSecondContainer {
+        color: #000;
+        
+        display: flex;
+        flex-direction: column;
+        
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            padding: 20px;
+        }
+        
+        h1 {
+            padding: 20px;
+            font-size: 45px;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            padding: 20px;
+            font-size: 25px;
+            text-transform: uppercase;
+        }
+        p {
+            padding: 20px;
+            font-size: 19px;
+        }
+    }
+`
+
+export const ThirdContainer = styled.div`
+    height: 480px;
+    background-color: #808CFD;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+
+    h1 {
+        font-size: 57px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        font-size: 17px;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+
+    a {
+        width: 185px;
+        height: 41px;
+        border-radius: 7px;
+        background-color: #E9ECFF;
+
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 15px;
+        color: #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+`

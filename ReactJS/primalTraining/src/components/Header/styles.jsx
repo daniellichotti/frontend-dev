@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
     padding: 20px;
-    width: 100vw;
+    width: calc(100vw-20px);
     height: 81px;
     background-color: #E9ECFF;
 
