@@ -135,6 +135,11 @@ export const SecondContainer = styled.div`
         grid-column: 2 /span 2;
         grid-row: 1;
         background: url(${ImageSecondContainer}) center/cover no-repeat;
+        transition: .3s ease;
+    }
+
+    #imageSecondContainer:hover {
+        background: url(${SecondImage}) center/cover no-repeat;
     }
 
     .separator {
@@ -209,5 +214,13 @@ export const ThirdContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+
+        cursor: pointer;
+        transition: 0.3ms ease-in-out;
     }
-`
+
+    a:hover {
+        background-color: #c6cdff;
+        transform: scale(1.1);
+    }
+    `
