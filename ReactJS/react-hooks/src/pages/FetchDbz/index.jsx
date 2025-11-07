@@ -1,17 +1,27 @@
 import { useEffect, useState } from "react"
 import { RingLoader } from "react-spinners";
-import { CharCards, CharCardsContainer, Container } from "./styled";
+import { ButtonsContainer, CharCards, CharCardsContainer, Container } from "./styled";
 
 export function FetchDbz() {
     const [characters, setCharacters] = useState(1)
     const [loading, setLoading] = useState(true)
     const [page, setPage] = useState(1)
 
+    function PrevPage() {
+        setPage(page - 1)
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function NextPage() {
+        setPage(page + 1)
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
 
     useEffect(() => {
         async function fetchApi() {
             try {
-                const res = await fetch(`https://dragonball-api.com/api/characters?page=${page}&limit=40`)
+                const res = await fetch(`https://dragonball-api.com/api/characters?page=${page}&limit=20`)
                 const data = await res.json()
                 setCharacters(data.items)
             } catch (error) {
@@ -23,13 +33,13 @@ export function FetchDbz() {
         }
 
         fetchApi()
-    }, [])
+    }, [page])
 
     if (loading) {
         return (
-            <Container>
+            <Container style={{ height: '100vh' }}>
                 <RingLoader
-                    color="#ff6600"
+                    color="#2b00ff"
                     loading={loading}
                     size={50}
                 />
@@ -50,11 +60,12 @@ export function FetchDbz() {
                     </CharCards>
                 ))}
             </CharCardsContainer>
-            <div>
-                <button>{'<'}</button>
+
+            <ButtonsContainer>
+                <button onClick={PrevPage}>{'<'}</button>
                 <p>{page}</p>
-                <button>{'>'}</button>
-            </div>
-        </Container>
+                <button onClick={NextPage}>{'>'}</button>
+            </ButtonsContainer>
+        </Container >
     )
 };
