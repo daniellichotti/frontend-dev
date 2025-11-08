@@ -84,3 +84,41 @@ export const ButtonsContainer = styled.div`
         align-items: center;
     }
 `
+
+export const ModalBackground = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    z-index: 99;
+`
+
+export const Modal = styled.div`
+    display: flex;
+    gap: 40px;
+
+    img {
+        height: 500px;
+        width: auto;
+    }
+`
+
+export const InfoContainer = styled.div`
+    width: 300px;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+`
+
