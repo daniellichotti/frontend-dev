@@ -33,7 +33,7 @@ export function FetchDbz() {
             try {
                 const res = await fetch(`https://dragonball-api.com/api/characters/${selectedCharacterId}`)
                 const data = await res.json()
-
+                //Verificar se existe a transofrmação antes de setar
                 setSelectedCharacter(data)
             } catch (error) {
                 console.log('Erro ao buscar os personagens: ', error)
