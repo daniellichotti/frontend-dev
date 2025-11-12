@@ -1,3 +1,17 @@
+import { useNavigate } from "react-router-dom"
+
 export function Home() {
-    return <h1>Home</h1>
+
+    const navigate = useNavigate()
+
+    function handleLogoutClick() {
+        navigate('/login')
+    }
+
+    return (
+        <>
+            <h1>Home</h1>
+            <button onClick={handleLogoutClick}>Logout</button>
+        </>
+    )
 };

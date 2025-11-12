@@ -8,6 +8,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    img {
+        margin-right: -200px;
+        margin-top: -400px;
+    }
+    
     `
 
 export const LoginContainer = styled.div`
@@ -33,6 +38,10 @@ export const LoginContainer = styled.div`
         background-color: #e6e6e6;
 
         font-size: 20px;
+
+        &:hover {
+            outline: 2px solid #d9f99d;
+        }
         
         &:focus {
             outline: none;
