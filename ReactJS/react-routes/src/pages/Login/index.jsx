@@ -6,14 +6,16 @@ import { useNavigate } from 'react-router-dom';
 export function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const [correct, setCorrect] = useState('')
+    const [correct, setCorrect] = useState(true)
+
     const navigate = useNavigate()
 
     function handleClick() {
         if (username === 'dnl' && password === '123') {
+            localStorage.setItem('auth', 'true')
             navigate("/home")
         } else {
-            alert('Dados invalidos')
+            setCorrect(false)
         }
     }
 
@@ -45,6 +47,9 @@ export function Login() {
                     />
                 </div>
                 <button onClick={handleClick}>Login</button>
+                {!correct && (
+                    <p style={{ color: 'red' }}>Dados incorretos</p>
+                )}
             </LoginContainer>
         </Container>
     )

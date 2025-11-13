@@ -5,6 +5,7 @@ export function Home() {
     const navigate = useNavigate()
 
     function handleLogoutClick() {
+        localStorage.setItem('auth', 'false')
         navigate('/login')
     }
 
