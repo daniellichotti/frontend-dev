@@ -43,11 +43,30 @@ export function Home() {
                 </p>
                 <Button handleClick={handleAboutClick}>☕ Quero saber mais!</Button>
             </TextContainer>
-            <ButtonContainer>
-                <LogoutButton onClick={handleLogoutClick}>
-                    <SignOutIcon size={32} />
-                </LogoutButton>
-            </ButtonContainer>
+            <TextContainer>
+                <h1>☕ Café artesanal que desperta até segunda-feira!</h1>
+                <p>
+                    Sabe aquele cheirinho de café que abraça a alma? É exatamente isso que o Café [Nome da Marca] entrega — só que em versão gourmet com atitude!
+                    Grãos selecionados, torra na medida e sabor que faz até o despertador sorrir.
+                    <br />
+                    ✨ Por que você vai amar:
+
+                    Grãos 100% selecionados com amor e cafeína
+
+                    Sabor intenso (sem drama, só energia boa)
+
+                    Torra artesanal feita por quem entende de café de verdade
+
+                    Aroma que transforma qualquer manhã em um bom motivo pra levantar da cama
+                    <br />
+                    🚀 Do grão à sua xícara, tudo com carinho e zero pressa.
+                    Porque café bom não se apressa — e o seu merecimento também não!
+                    <br />
+                    👉 Experimente agora o Café [Nome da Marca] e descubra o poder de um gole feliz.
+                </p>
+                <Button handleClick={handleAboutClick}>☕ Quero saber mais!</Button>
+            </TextContainer>
+
         </Container>
     )
 };

@@ -9,9 +9,17 @@ export const Container = styled.div`
 
     padding: 24px 40px;
 
+    box-shadow: 1px 1px 10px #000;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 `
 
 export const LogoContainer = styled.div`
@@ -31,6 +39,13 @@ export const NavContainer = styled.div`
     align-items: center;
     justify-content: flex-end;
     gap: 50px;
+
+    :last-child {
+        &:hover{
+            background-color: rgba(255, 176, 176, 0.4);
+        }
+    }
+    
 `
 
 export const LinksNavigation = styled.a`
@@ -38,6 +53,11 @@ export const LinksNavigation = styled.a`
     cursor: pointer;
 
     transition: border-bottom-color 3ms ease-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
     &:hover {
         border-bottom: 1px solid #3f6212;;

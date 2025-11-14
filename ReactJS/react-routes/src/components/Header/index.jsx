@@ -1,6 +1,7 @@
 import { Container, LinksNavigation, LogoContainer, NavContainer } from "./style";
 import logoImg from "../../assets/logoImg.png"
 import { useNavigate } from "react-router-dom";
+import { SignOutIcon, HouseIcon } from "@phosphor-icons/react";
 
 export function Header() {
     const navigate = useNavigate()
@@ -26,7 +27,8 @@ export function Header() {
             </LogoContainer>
             <NavContainer>
                 <LinksNavigation onClick={handleHomeClick}>Home</LinksNavigation>
-                <LinksNavigation onClick={handleAboutClick}>About</LinksNavigation>
+                <LinksNavigation onClick={handleAboutClick}>About </LinksNavigation>
+                <LinksNavigation onClick={handleLogoutClick}>Logout <SignOutIcon size={16} /></LinksNavigation>
             </NavContainer>
         </Container>
     )
