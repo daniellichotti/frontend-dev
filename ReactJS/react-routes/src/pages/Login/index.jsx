@@ -2,6 +2,8 @@ import { Container, LoginContainer } from "./style";
 import bmo from '../../assets/bmo-login.png'
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import { Button } from "../../components/Button";
+import { CredentialsValidation } from "../../utils/credentials-validatation";
 
 export function Login() {
     const [username, setUsername] = useState('')
@@ -11,7 +13,14 @@ export function Login() {
     const navigate = useNavigate()
 
     function handleClick() {
-        if (username === 'dnl' && password === '123') {
+        const isCredentialsValid = CredentialsValidation(username, password)
+
+        if (isCredentialsValid) {
+            alert(isCredentialsValid)
+            return
+        }
+
+        if (username === 'dnl@example.com' && password === '123456') {
             localStorage.setItem('auth', 'true')
             navigate("/home")
         } else {
@@ -34,7 +43,7 @@ export function Login() {
                 <h1>Acesse a plataforma</h1>
                 <div>
                     <input
-                        id="name" type="text" placeholder="Entre com seu username"
+                        id="name" type="email" placeholder="Entre com seu email"
                         value={username}
                         onChange={handleUsernameChange}
                     />
@@ -46,7 +55,7 @@ export function Login() {
                         onChange={handlePasswordChange}
                     />
                 </div>
-                <button onClick={handleClick}>Login</button>
+                <Button handleClick={handleClick}>Login</Button>
                 {!correct && (
                     <p style={{ color: 'red' }}>Dados incorretos</p>
                 )}

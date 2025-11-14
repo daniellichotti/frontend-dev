@@ -3,14 +3,14 @@ import styled from 'styled-components'
 export const Container = styled.div`
     background-color: #d9f99d;
     
-    height: 100vh;
+    height: auto;
     
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    `
+`
 
 export const TextContainer = styled.div`
     background-color: #e8fac6;
