@@ -1,0 +1,1 @@
+npm i react-router-dom styled-components @phosphor-icons/react

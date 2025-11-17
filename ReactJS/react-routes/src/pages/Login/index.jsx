@@ -22,7 +22,9 @@ export function Login() {
 
         if (username === 'dnl@example.com' && password === '123456') {
             localStorage.setItem('auth', 'true')
-            navigate("/home")
+            navigate("/home", {
+                state: { username: username }
+            })
         } else {
             setCorrect(false)
         }

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { ButtonContainer, Container, LogoutButton, TextContainer } from "./style"
 import { SignOutIcon } from "@phosphor-icons/react"
 import { Button } from "../../components/Button"
@@ -7,6 +7,7 @@ import { Header } from "../../components/Header";
 export function Home() {
 
     const navigate = useNavigate()
+    const location = useLocation()
 
     function handleLogoutClick() {
         localStorage.setItem('auth', 'false')
@@ -21,7 +22,7 @@ export function Home() {
         <Container>
             <Header />
             <TextContainer>
-                <h1>☕ Café artesanal que desperta até segunda-feira!</h1>
+                <h1>☕ Olá {location.state.username.split('@')[0]}, Café artesanal que desperta até segunda-feira!</h1>
                 <p>
                     Sabe aquele cheirinho de café que abraça a alma? É exatamente isso que o Café [Nome da Marca] entrega — só que em versão gourmet com atitude!
                     Grãos selecionados, torra na medida e sabor que faz até o despertador sorrir.
