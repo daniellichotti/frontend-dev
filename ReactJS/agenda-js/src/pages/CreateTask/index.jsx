@@ -1,35 +1,33 @@
 import { useState } from "react"
 import { Container, TaskForm } from "./style"
 import { useNavigate } from 'react-router-dom'
-import { useStore } from "../../store/useTaskListStore.jsx"
 
 export function CreateTaskPage() {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
-    //const [tasks, setTasks] = useState([])
-    const tasks = useStore((state) => state.tasks)
-    const setTasks = useStore((state) => state.includeTask)
+    const [tasks, setTasks] = useState([])
 
     const navigate = useNavigate()
 
     function handleSubmit(event) {
         event.preventDefault()
 
-        if (title === '' || description === '') {
-            alert('Digite algo!')
+        if (!title || !description) {
+            alert("Digite algo!")
             return
         }
 
-        const newTask = {
-            title,
-            description
-        }
+        const newTask = { title, description }
 
+        // pegar tarefas salvas
+        const saved = JSON.parse(localStorage.getItem("tasks")) || []
 
-        setTasks(newTask)
+        const updated = [...saved, newTask]
 
-        alert('Tarefa Adicionada com Sucesso!')
+        // salvar atualizado
+        localStorage.setItem("tasks", JSON.stringify(updated))
 
+        alert("Tarefa adicionada!")
         navigate('/listar-tarefas')
     }
 
