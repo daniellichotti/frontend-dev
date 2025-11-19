@@ -1,3 +1,6 @@
+import { useStore } from "../../store/useTaskListStore.jsx"
+
 export function ListTaskPage() {
-    return <h1>Listar tarefas</h1>
+    const tasks = useStore((state) => state.tasks)
+    return <h1>hello</h1>
 };
