@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Home } from './pages/Home'
-import { About } from './pages/About'
-import { Login } from './pages/Login'
-import { Error } from './pages/Error'
 import { PrivateRoute } from './components/PrivateRoute'
+import { About } from './pages/About'
+import { Error } from './pages/Error'
+import { Home } from './pages/Home'
+import { Login } from './pages/Login'
 
 export const router = createBrowserRouter([
     {
