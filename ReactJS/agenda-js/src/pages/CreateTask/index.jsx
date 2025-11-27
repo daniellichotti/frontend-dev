@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 export function CreateTaskPage() {
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
-    const [tasks, setTasks] = useState([])
+    const { tasks, addTask } = useListStore();
 
     const navigate = useNavigate()
 
